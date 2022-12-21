@@ -1,0 +1,12 @@
+#In HDFS file system   /=Root 
+
+#Command to check the files inside the root HDFS directory
+hdfs fs -ls /
+
+#Command to create a directory in HDFS
+hdfs fs -mkdir /input_data        #here input_data is the directory name
+
+# Copy data from local file to HDFS
+hdfs fs -put folder_name/file_name destination_folder_name
+For Example:- hdfs fs -put trees.csv /input_data
+
